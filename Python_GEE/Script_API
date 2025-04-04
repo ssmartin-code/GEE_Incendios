@@ -1,0 +1,14 @@
+
+pip install python-dotenv
+
+
+from dotenv import load_dotenv
+import os
+
+# Cargar explícitamente API_Local.env
+load_dotenv('API_Local.env')
+
+api_key = os.getenv('API_KEY')
+otra_key = os.getenv('OTRA_KEY')
+
+print(api_key)  # listo para usarse de manera segura
